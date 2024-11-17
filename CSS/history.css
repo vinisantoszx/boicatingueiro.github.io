@@ -1,13 +1,6 @@
 /* site desenvolvido por VINICIUS SANTOS */
 /* entre em contato por @vinisantoszx*/
 
-main {
-    display: flex;
-    flex-direction: column;
-    
-    overflow-x: hidden;
-}
-
 .text-services {
     margin-top: 20px;
 }

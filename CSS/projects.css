@@ -103,6 +103,7 @@
     text-align: justify;
 }
 
+
 @media (max-width: 1200px) {
     .container {
         height: auto;
