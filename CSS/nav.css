@@ -2,19 +2,20 @@
 /* entre em contato por @vinisantoszx*/
 
 .main-menu {
+  height: 20vh;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #ffffff;
-  height: 15vh;
-  border-bottom: #e98b38 2px solid;
-}
 
-main {
-  background-size: cover;
-  height: 80vh;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+  background: #fff;
+  border-bottom: #e98b38 2px solid;
+
+  overflow-x: hidden;
+
+  z-index: 1000;
 }
 
 .nav-list {
@@ -38,7 +39,8 @@ main {
 }
 
 .image-logo {
-  height: 14vh;
+  height: 12vh;
+
   transition: 0.3s;
 }
 
@@ -55,37 +57,57 @@ main {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #e98b38;
+
   margin: 8px;
   transition: 0.3s;
+
+  background-color: #e98b38;
 }
 
+
+/* BREAKROW - UNIDADES ESCOLARES */
+#break-school {
+  display: none;
+}
+
+@media (max-width: 1200px) and (min-width: 1000px){
+  #break-school {
+      display: block;
+  }
+}
+
+
 @media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
   .nav-list {
-    position: absolute;
-    top: 15vh;
-    right: 0;
-    width: 100vw;
-    height: 50vh;
-    background: #fcfcfc;
-    border-bottom: #e98b38 2px groove;
-    padding-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    z-index: 999;
+      width: 100vw;
+      height: 60vh;
+
+      position: absolute;
+      top: 20.1vh;
+      right: 0;
+      padding-bottom: 20px;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      
+      border-bottom: #e98b38 2px solid;
+      
+      transform: translateY(-140%);
+      transition: transform 0.4s ease-in;
+
+      background-color: #fcfcfc;
+
+      z-index: 99;
   }
+
   .nav-list li {
-    margin-left: 0;
-    opacity: 0;
+      margin-left: 0;
+      opacity: 0;
   }
+
   .mobile-menu {
-    display: block;
+      display: block;
   }
 }
 
@@ -99,12 +121,13 @@ main {
 
 @keyframes navLinkFade {
   from {
-    opacity: 0;
-    transform: translateX(50px);
+      opacity: 0;
+      transform: translateY(-50px);
   }
+  
   to {
-    opacity: 1;
-    transform: translateX(0);
+      opacity: 1;
+      transform: translateX(0);
   }
 }
 
@@ -119,60 +142,3 @@ main {
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px);
 }
-
-/* .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.menu > li {
-  position: relative;
-}
-
-.menu > li > a {
-  display: block;
-  padding: 15px;
-  color: white;
-  text-decoration: none;
-  background-color: #333;
-}
-
-.menu > li > a:hover {
-  background-color: #555;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #444;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.submenu li {
-  position: relative;
-}
-
-.submenu > li > a {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-}
-
-.submenu > li > a:hover {
-  background-color: #666;
-}
-
-.submenu .submenu {
-  top: 0;
-  left: 100%;
-}
-
-.menu > li:hover .submenu {
-  display: block;
-} */
