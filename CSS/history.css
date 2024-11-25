@@ -88,24 +88,6 @@
     background-color: #e98b38;
 }
 
-/* .img-history {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    background-color: #eee;
-}
-
-.img-history img {
-    width: 23vw;
-    height: auto;
-    margin: 10px 5px;
-} */
-
 .video-box {
     width: 600px; 
     height: 340px;
