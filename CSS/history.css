@@ -179,7 +179,6 @@ ul.checklist li {
 
     .carossel-inner img {
         height: 200px;
-
         object-fit: fit;
     }
 
@@ -197,13 +196,15 @@ ul.checklist li {
     }
 
     .text-services {
-        margin: 20px -90px 0px -90px;
-
         line-height: 22px;
     }
 
+    .text-services p {
+        margin: 10px 40px;
+    }
+
     ul.checklist {
-        margin: 10px 120px;
+        margin: 10px 40px;
     
         list-style-type: none;
         padding: 0;
