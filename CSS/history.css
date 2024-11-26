@@ -159,8 +159,8 @@ ul.checklist li {
 
 @media (max-width: 999px) {
     .video-box {
-        width: 50%; 
-        height: 200px;
+        width: 60%; 
+        height: 300px;
 
         margin: 20px auto;
         border: 2px solid #ccc;
@@ -183,8 +183,8 @@ ul.checklist li {
     }
 
     .video-box {
-        width: 50%; 
-        height: 200px;
+        width: 80%; 
+        height: 250px;
 
         margin: 20px auto;
         border: 2px solid #ccc;
