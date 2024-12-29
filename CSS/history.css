@@ -94,14 +94,25 @@
 }
 
 /* VÍDEO SOBRE ACMJAII */
+.bg-video {
+    width: 100%;
+    height: auto;
+
+    background-color: #eee;
+}
+
 .video-box {
     width: 600px; 
     height: 340px;
+
     margin: 20px auto;
     border: 2px solid #ccc;
-    border-radius: 10px; 
+
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
     overflow: hidden;
+
     background-color: #000;
 }
 
@@ -114,10 +125,16 @@ iframe {
 /* EVENTOS E AÇÕES */
 .text-events h3 {
     margin: 10px 120px;
+
+    font-weight: bolder;
+    
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 .text-events p {
     margin: 10px 120px;
     text-align: justify;
+
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 
     line-height: 22px;
 }

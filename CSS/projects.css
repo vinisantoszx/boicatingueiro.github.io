@@ -120,4 +120,13 @@
 
         padding-top: 40px;
     }
+
+    .text-awards p {
+        margin: 0 40px;
+    
+        line-height: 22px;
+    
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    
+    }
 }
