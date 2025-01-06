@@ -23,7 +23,7 @@
 }
 
 .text-services p {
-    margin: 10px 120px;
+    margin: 10px 200px;
     text-align: justify;
 
     line-height: 22px;
@@ -124,14 +124,14 @@ iframe {
 
 /* EVENTOS E AÇÕES */
 .text-events h3 {
-    margin: 10px 120px;
+    margin: 10px 200px;
 
     font-weight: bolder;
     
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 .text-events p {
-    margin: 10px 120px;
+    margin: 10px 200px;
     text-align: justify;
 
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -141,11 +141,11 @@ iframe {
 
 /* MARCOS */
 .text-marks h3 {
-    margin: 10px 120px;
+    margin: 10px 200px;
 }
 
 .text-marks li{
-    margin: 10px 120px;
+    margin: 10px 200px;
     text-align: justify;
 
     line-height: 22px;
