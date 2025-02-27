@@ -78,7 +78,7 @@
 .text-services h1 {
     font-size: 24px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
@@ -111,7 +111,7 @@
     
     text-transform: uppercase;
     font-size: 16px;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
@@ -120,7 +120,7 @@
     color: #666;
     margin-bottom: 20px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .btn {
@@ -134,7 +134,7 @@
     transition: background-color 0.3s ease;
 
     text-transform: uppercase;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 
     background-color: #e98b38;
@@ -159,7 +159,7 @@
 .text-info h1 {
     font-size: 24px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
@@ -204,7 +204,7 @@
 
     margin-left: 40px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     font-weight: bolder;
 }
 
@@ -217,7 +217,7 @@
 
     line-height: 22px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 /* RESPONSIVIDADE - MOBILE*/

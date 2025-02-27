@@ -7,8 +7,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #ffffff;
 
     border-bottom: #e98b38 2px solid;

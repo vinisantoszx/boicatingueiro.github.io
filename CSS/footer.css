@@ -28,7 +28,7 @@ footer {
     margin-top: 0;
 
     font-weight: bold;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .footer-column p, .footer-column a {
@@ -38,7 +38,7 @@ footer {
     margin: 5px 0;
     text-decoration: none;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .footer-column a {
@@ -74,7 +74,7 @@ footer {
     margin-top: 20px;
     font-size: 14px;
 
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
 }
 
 .footer-bottom p {
