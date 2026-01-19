@@ -1,0 +1,198 @@
+/* ESTILO PARA PÁGINAS INTERNAS DE PROJETOS */
+
+:root {
+    --primary-color: #e98b38;
+    --text-dark: #2c2c2c;
+    --text-light: #555;
+    --bg-light: #f9f9f9;
+    --bg-white: #fff;
+    
+    --font-title: 'Oswald', sans-serif; 
+    --font-body: "Radio Canada", sans-serif;
+}
+
+main {
+    padding-top: 130px;
+    background-color: var(--bg-light);
+    min-height: 80vh;
+}
+
+/* --- HERO HEADER (Menor que a home) --- */
+.detail-header {
+    background-color: #222; /* Fundo padrão caso img falhe */
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.detail-overlay {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.detail-overlay h1 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.breadcrumb {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: #ddd;
+    text-transform: uppercase;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- CONTEÚDO PRINCIPAL (Layout 2 Colunas) --- */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Texto ocupa 2 partes, Sidebar 1 parte */
+    gap: 50px;
+}
+
+/* Coluna da Esquerda (Texto) */
+.project-article h2 {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.project-article h2:first-child { margin-top: 0; }
+
+.project-article p {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.project-article ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.project-article li {
+    font-family: var(--font-body);
+    margin-bottom: 10px;
+    color: var(--text-dark);
+    list-style-type: disc;
+}
+
+/* Coluna da Direita (Sidebar de Informações) */
+.project-sidebar {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    height: fit-content; /* Altura ajustada ao conteúdo */
+    position: sticky;
+    top: 150px; /* Fica fixo ao rolar a página */
+}
+
+.info-block {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.info-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.info-block h3 {
+    font-family: var(--font-title);
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.info-block p {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+.btn-action {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #d37525;
+}
+
+/* GALERIA NO FINAL DO ARTIGO */
+.mini-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.mini-gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.mini-gallery img:hover {
+    transform: scale(1.02);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+    .content-container {
+        grid-template-columns: 1fr; /* Vira uma coluna só */
+        gap: 40px;
+    }
+
+    .project-sidebar {
+        position: static; /* Remove o sticky no mobile */
+        order: -1; /* Joga a sidebar para cima do texto no mobile */
+    }
+}

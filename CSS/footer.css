@@ -1,89 +1,180 @@
-/* site desenvolvido por VINICIUS SANTOS */
-/* entre em contato por @vinisantoszx*/
+/* FOOTER PREMIUM - BOI CATINGUEIRO */
 
 footer {
-    background: linear-gradient(to bottom, #e98b38, #cd7528, #ae590f, #944907);
+    background-color: #1a1a1a;
+    /* Fundo Dark */
     color: #fff;
-    padding: 20px;
-    text-align: center;
-
-    margin-top: 20px;
+    padding: 70px 0 30px;
+    font-family: "Radio Canada", sans-serif;
+    border-top: 5px solid var(--primary-color);
+    margin-top: auto;
+    /* Garante que fique no fundo se a página for curta */
 }
 
 .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
+    gap: 40px;
 }
 
-.footer-column {
+/* Colunas */
+.footer-col {
     flex: 1;
-    margin: 0 10px;
+    min-width: 280px;
 }
 
-.footer-column h2 {
-    font-size: 18px;
-    margin-top: 0;
-
-    font-weight: bold;
-    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+/* Coluna 1: Logo e Nome */
+.footer-logo {
+    height: 90px;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
-.footer-column p, .footer-column a {
+.footer-tagline {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
     color: #fff;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
 
-    font-size: 14px;
-    margin: 5px 0;
+/* Títulos das Colunas */
+.footer-col h3 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+/* Dados de Contato */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha topo caso quebre linha */
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+/* Links e Botões */
+.blog-link {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-
-    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s;
 }
 
-.footer-column a {
+.blog-link:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     color: #fff;
-
-    transition: 0.2s;
 }
 
-.footer-column a:hover {
-    color: #652a06;
-
-    text-decoration: underline;
-    transition: 0.2s;
-}
-
+/* Redes Sociais */
 .social-icons {
     display: flex;
-    justify-content: center; /* Centraliza os ícones dentro da coluna */
-    gap: 10px;
-    margin-top: 10px;
+    gap: 15px;
 }
 
-.social-icons a {
-    display: inline-block;
+.social-btn {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
 }
 
-.social-icons img {
-    width: 24px;
-    height: 24px;
+.social-btn img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    /* Ícones brancos */
+    transition: transform 0.3s;
 }
 
+.social-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.social-btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Rodapé Inferior */
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-
-    font-family: "Radio Canada", system-ui, -apple-system, Helvetica, Arial, sans-serif;
-}
-
-.footer-bottom p {
-    margin: 5px 0;
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
 }
 
 .footer-bottom a {
-    color: #592403;
-
-    font-weight: bolder;
+    color: #ccc;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contact-item {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
 }

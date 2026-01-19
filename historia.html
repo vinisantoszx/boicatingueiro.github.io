@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boi Catingueiro - História</title>
 
     <!-- CSS E RESET -->
+    <link rel="stylesheet" href="CSS/home.css">
     <link rel="stylesheet" href="CSS/history.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/nav.css">
@@ -14,423 +16,215 @@
     <!-- FONTES E LINKS EXTERNOS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
     <link rel="shortcut icon" href="IMG/main-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- LINKS JAVASCRIPT -->
+    <script src="JS/mobile-navbar.js" defer></script>
+    <script src="JS/image-carrosel.js" defer></script>
 
 </head>
+
 <body>
 
     <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
     <nav class="main-menu">
-        <a href="index.html"><img src="IMG/main-logo.png" alt="logo-acmjaii" class="image-logo"></a>
+        <div class="brand-group">
+            <a href="index.html">
+                <img src="IMG/main-logo-25.png" alt="Logo Boi Catingueiro" class="image-logo">
+            </a>
+
+            <div class="selo-badge">
+                <img src="IMG/selo-ponto.png" alt="Selo 25 anos">
+            </div>
+
+            <div class="selo-badge">
+                <img src="IMG/selo-pontao.png" alt="Selo 25 anos">
+            </div>
+        </div>
+
         <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
+
         <ul class="nav-list">
             <li><a href="index.html" class="link-nav">Início</a></li>
-            <li><a href="historia.html" class="link-nav">Eventos</a></li>
+            <li><a href="historia.html" class="link-nav">História</a></li>
+            <li><a href="eventos.html" class="link-nav">Eventos</a></li>
             <li><a href="projetos.html" class="link-nav">Projetos</a></li>
-            <!-- <li><a href="conquistas.html" class="link-nav"><p>Conquistas</p></a></li> -->
+            <li><a href="conquistas.html" class="link-nav">
+                    <p>Conquistas</p>
+                </a></li>
         </ul>
     </nav>
 
     <!-- PÁGINA - HISTÓRIA -->
     <main>
-        <!-- TEXTOS HISTÓRIA -->
-<!--    <div class="container">
-            <div class="text-services">
-                <h2 class="text-services">Nosso início</h2>
-                <p>A Associação Comunitária Menino Jesus de Alegre II fundada em 07 de Janeiro de 2001, desenvolve atividades sociais, artísticas e culturais no município de Itatira e nos sertões de Canindé. Através do Ponto de Cultura  Boi Catingueiro,  tem como premissas valorizar, reconhecer e incentivar a cultura popular por meio de iniciativas socioculturais que atingem diretamente, crianças, adolescentes e jovens da zona rural do município de Itatira. Outra dimensão da missão da instituição está centrada no fortalecimento de ações de captação de recursos, gerando oportunidades inovadoras para os jovens da comunidade e do município. Eixos como profissionalização, renda e difusão de saberes, são os elementos fundamentais da entidade, ao mesmo tempo que possibilita a ampliação dessas ações para outras partes do município como as atividades itinerantes através de editais, chamadas públicas e prêmios. <br>
-                Destacamos o projetos permante da instituição:  Ponto de Cultura Boi Catingueiro criado em 2015, Cine Mais Cultura criado em 2009. Grupo de Violão criado em 2006, Ponto de Leitura criado em 2019, Grupo de Flauta em 2021. Grupo de Teatro e Dança desde 2011 e por fim, a Rádio Comunitária 13 de Maio, criada em 2013 em parceria com escola 13 de Maio. </p>
+        <header class="page-header" style="background-image: url('IMG/header-historia.jpg');">
+            <div class="header-content">
+                <h1>Uma História de Raízes</h1>
+                <p>Do sonho de uma comunidade à referência cultural no sertão de Itatira.</p>
             </div>
-        </div> -->
-        <!-- CARROSEL DE IMAGENS -->
+        </header>
 
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/arrasta-pe1.png" alt="Imagem 1">
-                <img src="IMG/arrasta-pe2.png" alt="Imagem 2">
+        <section class="narrative-section">
+            <div class="container-narrow">
+                <h2>A Semente em Alegre: Luta e Dignidade</h2>
+                <p>A história da Associação Comunitária Menino Jesus de Alegre II se confunde com a própria luta por
+                    sobrevivência e dignidade no sertão. Muito antes de sermos um Ponto de Cultura, nascemos da
+                    necessidade urgente de organizar a comunidade para conquistar direitos básicos.</p>
+
+                <p>Nos primeiros anos, nossa missão era garantir que as famílias tivessem acesso ao essencial: água, luz
+                    e comunicação. Foi através da mobilização comunitária que conquistamos projetos vitais, como a
+                    instalação da rede de energia elétrica, telefones públicos e fixos, além da construção de cisternas
+                    de placas e fogões ecológicos, permitindo a convivência sustentável com o semiárido.</p>
+
+                <p>Essa organização social sólida culminou no reconhecimento oficial da instituição como de
+                    <strong>Utilidade Pública</strong>, através da Lei Municipal Nº 516, de 30 de Outubro de 2006. Era o
+                    primeiro grande passo de uma longa jornada.</p>
             </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
 
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">Quadrilha Infantil de Alegre emociona no São João do Ceará com inclusão e talento</h3>
-
-                <p>A comunidade rural de Alegre, em Itatira, mostrou que a cultura popular é feita de união, alegria e inclusão. Formada por crianças da Escola 13 de Maio, a quadrilha infantil vem encantando o público com apresentações cheias de cor, emoção e representatividade. O grupo é composto por meninos e meninas da zona rural, e um dos maiores orgulhos do projeto é a participação de uma criança cega, cuja presença simboliza o compromisso com a acessibilidade e a inclusão na cultura junina.</p>
-
-                <p>O projeto contou com o apoio da Secretaria da Cultura do Estado do Ceará (Secult-CE), por meio do 25º Edital Ceará Junino – Categoria Infantil, e proporcionou às crianças experiências únicas de aprendizado e convivência. A iniciativa mobilizou toda a comunidade: pais ajudaram na confecção dos figurinos, a Escola 13 de Maio abriu espaço para os ensaios e o Ponto de Cultura Boi Catingueiro serviu de palco para momentos de criação e formação.</p>
-
-                <p>As apresentações no XVII Itajunino – Etapa Ceará Junino dos Sertões de Canindé e nos festejos do padroeiro São Pedro, em Alegre II, foram emocionantes e marcaram o início de uma trajetória promissora. O grupo também ganhou destaque nas redes sociais, compartilhando bastidores e ensaios que cativaram o público.</p>
-
-                <p>Com muito brilho e dedicação, a quadrilha infantil mostrou que o São João é, acima de tudo, uma celebração da cultura, da inclusão e da força das comunidades do interior cearense.</p>
-            </div>
-        </div>
-
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/ita1.png" alt="Imagem 1">
-                <img src="IMG/ita2.png" alt="Imagem 2">
-                <img src="IMG/ita3.png" alt="Imagem 3">
-                <img src="IMG/ita4.png" alt="Imagem 4">
-            </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
-
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">XVII ITAJUNINO: O Sabor da Nossa História consagra-se como o maior festival junino do interior do Ceará</h3>
-
-                <p>Itatira se transforma mais uma vez na capital da cultura popular com a realização do XVII ITAJUNINO: O Sabor da Nossa História, o maior festival junino do interior cearense. Com seis dias de programação intensa, o evento celebra a tradição, a música, a dança e os sabores do Sertão, reunindo milhares de pessoas em uma grande festa que movimenta a economia, o turismo e o coração do povo.</p>
-
-                <p>A programação vai de 26 de junho a 1º de julho, com destaque para: </p>
-                <h3>
-                    •	26 e 27 de junho: Etapa Ceará Junino, reunindo quadrilhas de diversas regiões do estado; <br><br>
-                    •	28 e 29 de junho: Etapa Regional aberta, com participação de grupos de municípios vizinhos; <br><br>
-                    •	30 de junho: Etapa Municipal, com as quadrilhas da casa disputando em clima de festa; <br><br>
-                    •	1º de julho: Grande encerramento com shows de peso no cenário do forró: Rey Vaqueiro, Vitor Fernandes e Tarcísio do Acordeon, prometendo emocionar e animar o público em uma noite histórica.</h3>
-
-                <p>O ITAJUNINO oferecerá R$ 35 mil em premiações, sendo R$ 15 mil para a etapa Ceará Junino e R$ 20 mil para a etapa regional, valorizando os grupos que mantém viva a chama da cultura popular.</p>
-
-                <p>A estrutura do evento impressiona: espaço coberto com tablado de apresentações, camarins organizados e um jantar especial preparado para mais de 1.500 brincantes, representantes de 29 quadrilhas juninas vindas de diversas cidades.</p>
-
-                <p>O público estimado é de 6 mil pessoas por dia, com expectativa de reunir mais de 15 mil pessoas na praça pública no dia do encerramento.</p>
-
-                <p>O XVII ITAJUNINO é uma realização da Prefeitura de Itatira, com co-realização da Associação Comunitária Menino Jesus de Alegre II, e conta com o apoio do Ministério do Turismo e apoio cultural da Secretaria da Cultura do Estado do Ceará.</p>
-
-                <h3>Mais que um festival, o ITAJUNINO é um ato de resistência e celebração das raízes nordestinas, onde o sabor da história se mistura à emoção de cada apresentação. É Itatira reafirmando seu lugar no mapa da cultura cearense com arte, alegria e tradição.</h3>
-            </div>
-        </div>
-
-        <div class="text-services">
-            <div class="bg-video">
-                <h2 class="text-services">APRESENTAÇÃO GRUPO BOI CATINGUEIRO 2024</h2>
-                <div class="video-box">
-                    <iframe 
-                        src="https://www.youtube.com/embed/KcY-ntNiOKA?si=rZu2Dii0STXvqxxV"
-                        title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+            <div class="origin-mosaic">
+                <div class="mosaic-item main-photo">
+                    <img src="IMG/sede-acmjaii.jpg" alt="Primeira sede da Associação">
                 </div>
-                <h2 class="text-services">I MOSTRA CULTURA INFÂNCIA DOS SERTÕES DE CANINDÉ</h2>
-                <div class="video-box">
-                    <iframe 
-                        src="https://www.youtube.com/embed/lE-pVmf8dOk?si=NwCiA7z4a3GvXfVz"
-                        title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                <div class="mosaic-item">
+                    <img src="IMG/reuniao.jpg" alt="Reunião com moradores">
                 </div>
-                <h2 class="text-services">TEATRO COMO OFICINA: NO TERREIRO DE CASA A GENTE VIRA SER TÃO</h2>
-                <div class="video-box">
-                    <iframe 
-                        src="https://www.youtube.com/embed/EUV1S1Y-4j8?si=s9q9uuJyrdGqGDbR"
-                        title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                <div class="mosaic-item">
+                    <img src="IMG/funart-2024-1.jpg" alt="Primeiras ações culturais">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <br><br>
+        <section class="quote-divider">
+            <blockquote>
+                "Quando o povo se une, a seca vira mar de oportunidades. Nossa arte nasceu da nossa resistência."
+            </blockquote>
+        </section>
 
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/mostra1.png" alt="Imagem 1">
-                <img src="IMG/mostra2.png" alt="Imagem 2">
-                <img src="IMG/mostra3.png" alt="Imagem 3">
-            </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
+        <section class="narrative-section bg-alt">
+            <div class="container-flex">
+                <div class="text-column">
+                    <h2>O Despertar da Identidade Cultural</h2>
+                    <p>Com a infraestrutura básica encaminhada, percebemos que a comunidade tinha sede de algo mais. Era
+                        preciso alimentar a alma. Em 2009, demos um salto transformador com a aprovação do Projeto Praça
+                        Cultural (Edital do BNB) e a implantação do <strong>Cine Mais Cultura</strong> (MinC), abrindo
+                        janelas para o mundo através do audiovisual.</p>
 
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">Crianças Celebram a Cultura Popular na I Mostra de Cultura Popular na Infância</h3>
-                <p>No dia 07 de janeiro de 2025, a partir das 18h, a Comunidade de Alegre, em Itatira (CE), será palco de uma grande festa cultural: a I Mostra de Cultura Popular na Infância. O evento, protagonizado por crianças das comunidades rurais da região, promete emocionar com apresentações de reisado, quadrilhas, pastoril e maracatu, mostrando toda a riqueza das tradições culturais do sertão cearense.</p>
+                    <p>Foi nesse solo fértil que floresceu o Grupo Boi Catingueiro. Resgatando as tradições do Reisado —
+                        como o histórico Boi dos Caretas de São Gonçalo — e inovando com as artes cênicas, a Associação
+                        passou a ser um farol de cultura.</p>
 
-                <p>Mais do que um espetáculo, a Mostra é o resultado de meses de dedicação, aprendizado e alegria. Meninas e meninos que participaram de oficinas culturais agora mostram o quanto são capazes de valorizar e dar vida às tradições que são patrimônio de sua terra.</p>
+                    <p>Entre 2012 e 2013, executamos o projeto divisor de águas: <em>"Um Olhar Para Quem Precisa Ser
+                            Olhado"</em>. Focado no resgate da cidadania e da autoestima, o projeto combateu a evasão
+                        escolar, o uso de drogas e a violência, provando que a arte é uma ferramenta poderosa de
+                        transformação social.</p>
 
-                <p>“É mais do que aprender a dançar ou tocar; é sobre se sentir parte de algo maior, da história e da cultura que fazem quem somos”, destaca um dos organizadores.</p>
-
-                <p>O evento será acessível para todos, com intérprete de Libras e acolhimento especial para pessoas com deficiência, reafirmando o compromisso com a inclusão.</p>
-
-                <p>A I Mostra de Cultura Popular na Infância é uma Produção: Antônio Inácio, realização da Associação Comunitária Menino Jesus de Alegre II e do Ponto de Cultura Boi Catingueiro, com apoio da Prefeitura de Itatira e do Departamento de Cultura, e promovida pela Secretaria de Cultura do Ceará, através da Lei Paulo Gustavo e do Ministério da Cultura.</p>
-
-                <h3>Entrada gratuita. Venha prestigiar o talento das crianças e celebrar o orgulho de ser sertanejo.</h3>
-
-                <p>📍 Local: Comunidade de Alegre - Itatira/CE <br>
-                🗓 Data: 07 de janeiro de 2025 <br>
-                ⏰ Horário: A partir das 18h <br>
-                </p>
-                    
-                <h3>Cultura é identidade, e nossas crianças são o futuro. Participe!</h3>
-            </div>
-        </div>
-
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/natal1.png" alt="Imagem 1">
-                <img src="IMG/natal2.png" alt="Imagem 2">
-                <img src="IMG/natal3.png" alt="Imagem 3">
-                <img src="IMG/natal4.png" alt="Imagem 4">
-                <img src="IMG/natal5.png" alt="Imagem 5">
-                <img src="IMG/natal6.png" alt="Imagem 6">
-            </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
-
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">IV Mostra de Natal de Itatira Celebra Tradição e Homenageia Pioneiras do Pastoril</h3>
-                <p>A IV Mostra de Natal de Itatira, realizada na Praça Matriz, trouxe ao palco a riqueza das tradições natalinas, com apresentações emocionantes e homenagens especiais. O evento, que celebra os 46 anos do Pastoril Menino Deus, tem como objetivo preservar e valorizar uma das manifestações culturais mais importantes da região, encantando o público e fortalecendo a identidade cultural local.</p>
-
-                <h3 class="text-events">Homenagem às Pioneiras</h3>
-                <p>Um dos momentos mais marcantes da noite foi a homenagem às primeiras pastorinhas de Itatira, Maura Bastos e Socorrinha Alencar, e à coordenadora inicial do Pastoril, Dona Elizete Paulino. Essas mulheres foram fundamentais para lançar as sementes do Pastoril Menino Deus em 1978. <br>
-                “É emocionante ver o quanto essa tradição cresceu. Quando começamos, não imaginávamos que o Pastoril teria tanta força e importância. É uma alegria enorme ver as novas gerações continuando o que começamos com tanto amor”, disse Maura Bastos, emocionada.</p>
-
-                <h3 class="text-services">Uma Noite de Cultura e Emoção</h3>
-                <p>A programação contou com apresentações vibrantes de grupos culturais que destacaram a força das tradições natalinas: <br>
-
-                * Reisado Boi dos Caretas (São Gonçalo, Itatira) <br>
-                O grupo abriu a noite com sua energia característica e personagens marcantes. “Participar da Mostra de Natal é uma honra. Aqui mostramos nossa cultura e fortalecemos as raízes do sertão”, comentou Erivan Batista, representante do Reisado Boi dos Caretas. <br>
-
-                * Reisado Boi Catingueiro (Alegre, Itatira) <br>
-                Com sua formação composta por crianças e adolescentes, o grupo emocionou o público. “o Reisado são mais que apresentações; são parte de quem somos. Ver o envolvimento da comunidade é muito especial”, disse Antônio Inácio , integrante do grupo. </p>
-
-                <h3 class="text-services">A Voz da População</h3>
-                <p>O público também se manifestou sobre a importância do evento para a cidade. “A Mostra de Natal é o momento em que Itatira se transforma. Vemos nossa cultura valorizada e compartilhada com todos. É lindo!”, comentou Ana Lúcia, moradora do centro da cidade.
-                Outro espectador, João Batista, ressaltou o impacto cultural: “O que vemos aqui é a preservação da nossa história. É emocionante saber que essas tradições estão vivas.” </p>
-
-                <h3>Pastoril e Diversidade</h3>
-                <p>O evento também trouxe grupos que reforçam a inclusão e a inovação nas tradições natalinas, como o Pastoril Estrela Translúcida, formado por mulheres trans, e o Pastoril Estrela de Ouro, que encantou o público com sua performance impecável. </p>
-
-                <h3 class="text-services">Um Evento para Valorizar a Cultura</h3>
-                <p>Para Lennon Lopes, produtor da Mostra e diretor do Departamento de Cultura de Itatira, o evento é uma prova do compromisso com a preservação cultural:
-                “Ver a praça cheia, com tantos grupos talentosos, é a realização de um sonho. Essa Mostra é mais do que um evento, é uma celebração do que somos e do que queremos continuar sendo: um povo que valoriza suas tradições.” </p>
-
-                <h3>Reconhecimento e Apoio</h3>
-                <p>A Mostra é uma realização da Associação Comunitária Menino Jesus de Alegre II, com apoio da Prefeitura de Itatira, do Departamento de Cultura, do Museu de Itatira e da Secretaria da Cultura do Ceará, por meio do Edital para Mostras Natalinas. </p>
-
-                <h3>Itatira, a Cidade do Natal, segue celebrando sua história e encantando o público com a força de sua cultura. 🎄</h3>
-            </div>
-        </div>
-
-            <div class="text-services">
-                <div class="bg-video">
-                <h2 class="text-services">Vídeos</h2>
-                    <div class="video-box">
-                        <iframe 
-                            src="https://www.youtube.com/embed/JFWVXxX3Yl4?si=QY7YYaO3PFKv8Y2h"
-                            title="YouTube video player" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
+                    <p>Todo esse esforço foi coroado com o reconhecimento como <strong>Ponto de Cultura</strong> pelo
+                        Governo Federal e Estadual (2012-2015) e, mais recentemente, a certificação oficial pela
+                        CODAC/SECULT-CE em 2020, integrando a rede Cultura Viva.</p>
                 </div>
-            
-
-                <h2 class="text-events">Eventos e ações:</h2>
-                <div class="text-events">
-                    <ul>
-                        <li>
-                            <h3>XVI - Itajunino - Terreiro Junino dos Sertões de Canindé</h3>
-                            <p>Local: Praça Matriz de Lagoa do Mato, Itatira</p>
-                            <p>Data: 26/27 de junho de 2024</p>
-                        </li>
-                        <li>
-                            <h3>Furnarte Ações Continuadas 2023 - MINC Grupo de Teatro Boi Catingueiro</h3>
-                            <p>Cursos: 180h de Circo, Teatro de Rua e Performance</p>
-                        </li>
-                        <li>
-                            <h3>Mostra Regional Natal de Luz de Itatira: Celebrando 106 anos do Boi Coração</h3>
-                            <p>Local: Praça Matriz de Itatira</p>
-                            <p>Data: 26/27 de dezembro de 2023</p>
-                        </li>
-                        <li>
-                            <h3>Seminário Regional dos Pontos de Cultura</h3>
-                            <p>Local: Espaço de Arte e Cultura Boi Catingueiro, Alegre</p>
-                            <p>Ano: 2023</p>
-                        </li>
-                        <li>
-                            <h3>Noite Cultural dos Pontos de Cultura</h3>
-                            <p>Local: Praça São Pedro, Alegre, Itatira</p>
-                            <p>Ano: 2023</p>
-                        </li>
-                        <li>
-                            <h3>Espetáculo da Paixão de Cristo</h3>
-                            <p>Período: 2016 a 2024</p>
-                        </li>
-                        <li>
-                            <h3>Co-Produção: Festival Itajunino</h3>
-                            <p>Período: 2018 a 2023</p>
-                        </li>
-                        <li>
-                            <h3>Lançamento do Livro "Ser Tão de Artes: Gentes, Cultura e Memórias" - Lennon Lopes</h3>
-                            <p>Local: Museu de Itatira, Itatira</p>
-                            <p>Ano: 2022</p>
-                        </li>
-                        <li>
-                            <h3>Mostra Regional Natal de Luz de Itatira: Fé, Cultura e Patrimônio</h3>
-                            <p>Local: Praça Matriz de Itatira</p>
-                            <p>Data: 22/23 de dezembro de 2022</p>
-                        </li>
-                        <li>
-                            <h3>Seminário Regional LGBT</h3>
-                            <p>Data: 14 a 17 de maio de 2021</p>
-                            <p>Formato: Híbrido (Online e Secretaria de Educação e Cultura - Itatira)</p>
-                        </li>
-                        <li>
-                            <h3>Noite Cultural</h3>
-                            <p>Local: Assentamento Umarizeiras, Itatira - CE</p>
-                            <p>Data: 13 de agosto de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Noite Cultural</h3>
-                            <p>Local: Assentamento Vitória, Itatira - CE</p>
-                            <p>Data: 14 de agosto de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Noite Cultural - Itatira Sede</h3>
-                            <p>Local: Escola Chave do Saber, Itatira</p>
-                            <p>Data: 11 de junho de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Noite Cultural - Escola Treze de Maio</h3>
-                            <p>Local: Comunidade de Alegre II - Itatira - CE</p>
-                            <p>Data: 28 de agosto de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Evento do Ponto de Cultura: Boi Catingueiro</h3>
-                            <p>Local: Comunidade de Alegre II - Itatira - CE</p>
-                            <p>Data: 26 de junho de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Evento do Ponto de Cultura: Raízes da Terra</h3>
-                            <p>Local: Assentamento de Tiracanga, Ponto de Cultura Raízes da Terra - Canindé - CE</p>
-                            <p>Data: 31 de julho de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Curso de Música (Flauta Doce)</h3>
-                            <p>Local: Ponto de Cultura Boi Catingueiro - Comunidade de Alegre II - Itatira - CE</p>
-                            <p>Data: Maio a junho de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Curso de Violão e Teclado</h3>
-                            <p>Local: Ponto de Cultura Boi Catingueiro - Comunidade de Alegre II - Itatira - CE</p>
-                            <p>Data: Maio a julho de 2021</p>
-                        </li>
-                        <li>
-                            <h3>Ampliação do Prédio do Ponto de Cultura Boi Catingueiro</h3>
-                            <p>Local: Comunidade de Alegre II - Itatira - CE</p>
-                            <p>Data: Fevereiro a agosto de 2021</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <h2>Marcos importantes</h2>
-                <div class="text-marks">
-                    <p>O Ponto de Cultura Boi Catingueiro tem se destacado como uma referência cultural e social em Itatira e na região, promovendo ações que valorizam as tradições, fortalecem a cidadania e preservam o patrimônio cultural. Confira os principais marcos de sua trajetória:</p>
-
-                    <h3>Reconhecimentos e Certificações</h3>
-                    <ul>
-                        <li>- Reconhecido como Ponto de Cultura pelo Governo Federal, Estadual, SECULT e MINC (2012-2015);</li>
-                        <li>- Certificado como Ponto de Cultura do Ceará pela CODAC - SECULT/CE (2020);</li>
-                        <li>- Reconhecido como Ponto de Cultura pela Lei Cultura Viva (Lei 13.018/2014);</li>
-                    </ul>
-
-                    <h3>Eventos de Destaque</h3>
-                    <ul>
-                        <li>- Espetáculo da Paixão de Cristo: Realizado anualmente desde 2016;</li>
-                        <li>- Mostra Regional Natal de Luz de Itatira: Celebração de tradições natalinas com destaque para o Boi Coração, um símbolo cultural de 106 anos (2023);</li>
-                        <li>- Festival Itajunino - Terreiro Junino dos Sertões de Canindé: Co-produção de 2018 a 2023, com nova edição marcada para junho de 2024;</li>
-                    </ul>
-
-                    <h3>Projetos Culturais e Sociais</h3>
-                    <ul>
-                        <li>- Projeto “Um Olhar Para Quem Precisa Ser Olhado” (2012-2013): Resgatou cidadania, autoestima e combateu evasão escolar, drogas e violência;</li>
-                        <li>- Cursos de Formação Artística: Circo, Teatro de Rua e Performance (2023) e Música: Flauta Doce, Violão e Teclado (2021);</li>
-                        <li>- Projeto Cine Mais Cultura: Implantado em 2009 para democratizar o acesso ao cinema;</li>
-                    </ul>
-
-                    <h3>Infraestrutura e Sustentabilidade</h3>
-                    <ul>
-                        <li>- Ampliação do prédio do Ponto de Cultura Boi Catingueiro (2021);</li>
-                        <li>- Projetos de abastecimento de água, energia elétrica e arborização para a comunidade;</li>
-                        <li>- Construção de cisternas e fogões ecológicos, promovendo sustentabilidade;</li>
-                    </ul>
-
-                    <h3>Editais e Parcerias</h3>
-                    <ul>
-                        <li>- Edital Luzanite Cunha e Lei Aldir Blanc (2020);</li>
-                        <li>- Edital Ceará Junino (2024);</li>
-                        <li>- Edital Cultura Viva e Mestre Lucindo (2023);</li>
-                    </ul>
-
-                    <h3>Publicações e Memória Cultural</h3>
-                    <ul>
-                        <li>- Lançamento do livro "Ser Tão de Artes: Gentes, Cultura e Memórias" de Lennon Lopes, no Museu de Itatira (2022);</li>
-                    </ul>
-
-                    <h3>Articulação Regional e Formação de Redes</h3>
-                    <ul>
-                        <li>- Realização do Seminário Regional dos Pontos de Cultura (2023);</li>
-                        <li>- Atuação em diversas Noites Culturais em comunidades locais, promovendo inclusão e diversidade cultural;</li>
-                    </ul>
+                <div class="media-column single-image">
+                    <img src="IMG/historia-2.jpg" alt="Evolução do Grupo Boi Catingueiro">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <footer>
-            <div class="footer-container">
-                <!-- Coluna de Contato -->
-                <div class="footer-column">
-                    <h2>Contato</h2>
-                    <p>Endereço: Alegre II, S/N, Itatira-CE</p>
-                    <p>CNPJ: 06.086.082/0001-15</p>
-                    <p>Email: associacaoalegre2@gmail.com</p>
+        <section class="mission-section">
+            <div class="section-title">
+                <h2>Nossos Pilares</h2>
+                <div class="separator"></div>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <span class="material-symbols-outlined">diversity_3</span>
+                    <h3>Inclusão Social</h3>
+                    <p>Acolher a todos, sem distinção, promovendo a cidadania e combatendo vulnerabilidades através da
+                        arte.</p>
                 </div>
-    
-                <!-- Coluna de Links e Redes Sociais -->
-                <div class="footer-column">
-                    <h2>Links Rápidos</h2>
-                    <p><a href="#blog">Blog</a></p>
-                    <p><a href="#privacidade">Política de Privacidade</a></p>
-    
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
-                        <a href="https://blogger.com" target="_blank"><img src="IMG/blogger.png" alt="Blogger"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="IMG/instagram.png" alt="Instagram"></a>
-                    </div>
+                <div class="pillar-card">
+                    <span class="material-symbols-outlined">theater_comedy</span>
+                    <h3>Memória Viva</h3>
+                    <p>Preservar e repassar as tradições do reisado, pastoril e festas juninas para as novas gerações.
+                    </p>
+                </div>
+                <div class="pillar-card">
+                    <span class="material-symbols-outlined">nature_people</span>
+                    <h3>Sustentabilidade</h3>
+                    <p>Promover a convivência com o semiárido através de infraestrutura e consciência ambiental.</p>
                 </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
-            </div>
-        </footer>
+        </section>
 
     </main>
 
-</body>
+    <footer>
+        <div class="footer-container">
 
-<!-- SCRIPTS - HISTORY-->
-<script src="JS/mobile-navbar.js"></script>
-<script src="JS/image-carrosel.js"></script>
+            <div class="footer-col">
+                <img src="IMG/main-logo.png" alt="Boi Catingueiro" class="footer-logo">
+                <p class="footer-tagline">Associação Comunitária<br>Menino Jesus de Alegre II</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Fale Conosco</h3>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">location_on</span>
+                    <span>Alegre II, S/N, Itatira-CE</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">badge</span>
+                    <span>CNPJ: 04.658.797/0001-70</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">mail</span>
+                    <span>associacaoalegre2@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Conecte-se</h3>
+
+                <a href="https://associacaoalegre.blogspot.com" target="_blank" class="blog-link">
+                    Acesse nosso Blog Oficial →
+                </a>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/boicatingueiro" target="_blank" class="social-btn"
+                        aria-label="Facebook">
+                        <img src="IMG/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.youtube.com/@acmjaiiitatira1665" target="_blank" class="social-btn"
+                        aria-label="Blogger">
+                        <img src="IMG/youtube.png" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.instagram.com/ponto_deculturaboicatingueiro" target="_blank" class="social-btn"
+                        aria-label="Instagram">
+                        <img src="IMG/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Associação Comunitária Menino Jesus de Alegre II. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
+        </div>
+    </footer>
+
+</body>
 
 </html>

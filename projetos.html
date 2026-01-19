@@ -1,262 +1,304 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boi Catingueiro - Projetos</title>
 
     <!-- CSS E RESET -->
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/projects.css">
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/history.css">
     <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/projects.css">
 
     <!-- FONTES E LINKS EXTERNOS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400&family=Oswald:wght@400;700&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
     <link rel="shortcut icon" href="IMG/main-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- LINKS JAVASCRIPT -->
+    <script src="JS/mobile-navbar.js" defer></script>
+    <script src="JS/multi-carousel.js" defer></script>
 
 </head>
+
 <body>
-    
+
     <!-- MENU DE NAVEGAÇÃO - DESKTOP/MOBILE -->
     <nav class="main-menu">
-        <a href="index.html"><img src="IMG/main-logo.png" alt="logo-acmjaii" class="image-logo"></a>
+        <div class="brand-group">
+            <a href="index.html">
+                <img src="IMG/main-logo-25.png" alt="Logo Boi Catingueiro" class="image-logo">
+            </a>
+
+            <div class="selo-badge">
+                <img src="IMG/selo-ponto.png" alt="Selo 25 anos">
+            </div>
+
+            <div class="selo-badge">
+                <img src="IMG/selo-pontao.png" alt="Selo 25 anos">
+            </div>
+        </div>
+
         <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
+
         <ul class="nav-list">
             <li><a href="index.html" class="link-nav">Início</a></li>
-            <li><a href="historia.html" class="link-nav">Eventos</a></li>
+            <li><a href="historia.html" class="link-nav">História</a></li>
+            <li><a href="eventos.html" class="link-nav">Eventos</a></li>
             <li><a href="projetos.html" class="link-nav">Projetos</a></li>
-            <!-- <li><a href="conquistas.html" class="link-nav"><p>Conquistas</p></a></li> -->
+            <li><a href="conquistas.html" class="link-nav">
+                    <p>Conquistas</p>
+                </a></li>
         </ul>
     </nav>
-    
-    <!-- PÁGINA - CONQUISTAS -->
+
+    <!-- PÁGINA - PROJETOS -->
     <main>
-
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/escola-rural1.png" alt="Imagem 1">
-                <img src="IMG/escola-rural2.png" alt="Imagem 2">
-                <img src="IMG/escola-rural3.png" alt="Imagem 3">
-                <img src="IMG/escola-rural4.png" alt="Imagem 4">
-                <img src="IMG/escola-rural5.png" alt="Imagem 5">
+        <header class="page-header">
+            <div class="header-content">
+                <h1>Nossos Projetos</h1>
+                <p>Iniciativas que transformam realidades através da arte, educação e cidadania.</p>
             </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
+        </header>
 
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">Escola Rural de Teatro dos Sertões: quando a arte transforma o cotidiano do sertão</h3>
+        <section class="featured-project">
+            <div class="container-flex">
+                <div class="featured-img">
+                    <div class="carossel-container"
+                        style="height: 100%; width: 100%; border-radius: 0; box-shadow: none;">
+                        <div class="carossel-inner">
+                            <img src="IMG/paixao-1.jpg" alt="Paixão de Cristo Cena 1">
+                            <img src="IMG/paixao-2.jpg" alt="Paixão de Cristo Cena 2">
+                            <img src="IMG/paixao-3.jpg" alt="Paixão de Cristo Cena 3">
+                            <img src="IMG/paixao-4.jpg" alt="Paixão de Cristo Cena 4">
+                            <img src="IMG/paixao-5.jpg" alt="Paixão de Cristo Cena 5">
+                            <img src="IMG/paixao-6.jpg" alt="Paixão de Cristo Cena 6">
+                        </div>
 
-                <p>Na pequena comunidade de Alegre II, em Itatira, o teatro tem mudado rotinas, criado novos sonhos e revelado talentos. A Escola Rural de Teatro dos Sertões, em andamento no Espaço Cultural Sertão das Artes, vem se consolidando como uma das mais importantes iniciativas culturais da região.</p>
-
-                <p>Realizada pela FUNARTE e pelo Governo Federal, dentro do Programa de Ações Continuadas 2024, a escola nasceu em 2023 a partir da mobilização da Associação Comunitária Menino Jesus de Alegre II e do Grupo de Teatro Boi Catingueiro, selecionados em edital nacional. Hoje, a experiência já atinge 75 alunos em cursos de Escrita Criativa e Dramaturgia, Interpretação Teatral e, a partir de setembro, Direção e Produção Teatral.</p>
-
-                <h3>Um palco para crianças e adolescentes da zona rural</h3>
-
-                <p>O projeto é voltado para crianças e adolescentes da zona rural de Itatira, que encontram na escola uma oportunidade rara de contato direto com a arte. Mais do que aulas de teatro, o espaço se tornou um local de convivência, troca de saberes e fortalecimento da identidade cultural sertaneja.</p>
-
-                <p>“Antes eu tinha vergonha de falar em público, mas agora já consigo até subir no palco”, conta uma das alunas. Outro jovem complementa: “Na dramaturgia aprendi a escrever as histórias que ouço dos meus avós e transformá-las em peças de teatro”.</p>
-
-                <h3>Transformação sentida pela comunidade</h3>
-
-                <p>A alegria também é de quem assiste de perto essa mudança.  Renata Muniz, moradora de Alegre II, emociona-se: “Ver nossos filhos e netos no palco é uma realização. Nunca pensei que o teatro chegaria até aqui dessa forma”.</p>
-
-                <p>Para Michele Oliveira, mãe de um aluno, o impacto é familiar: “Meu filho ganhou disciplina e autoestima. Ele está mais focado nos estudos e encontrou uma nova paixão no teatro”.</p>
-
-                <h3>Compromisso e futuro</h3>
-
-                <p>Segundo Antônio Inácio, Coordenador do projeto, essa iniciativa coloca a comunidade no mapa Cultural do Ceará: “É a realização de um sonho antigo. O sertão também é lugar de arte e merece visibilidade”.</p>
-
-                <p>Lennon Lopes, produtor cultural e articulador da iniciativa, ressalta a importância da qualificação profissional: “Trazer professores renomados do teatro cearense garante formação de qualidade e uma mostra final que vai emocionar a todos”.</p>
-
-                <h3>Além da formação artística, os alunos recebem ao final dos cursos, uma bolsa de incentivo de R$ 100,00, reconhecendo seu esforço e estimulando a permanência. O projeto culminará em uma Mostra Final, onde o público poderá assistir às criações produzidas ao longo da jornada.</h3>
-            </div>
-        </div>
-
-
-        <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/mostra4.png" alt="Imagem 1">
-                <img src="IMG/mostra5.png" alt="Imagem 2">
-                <img src="IMG/mostra6.png" alt="Imagem 3">
-            </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
-
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">Crianças protagonizam a I Mostra Regional de Cultura Popular na Infância em Itatira</h3>
-
-                <h3>Evento reuniu grupos culturais de Itatira e Canindé, com apresentações, oficinas e mais de mil pessoas alcançadas</h3>
-
-                <p>No dia 07 de janeiro de 2025, o município de Itatira foi palco da I Mostra Regional de Cultura Popular na Infância, um evento inédito que uniu tradição, brincadeira e protagonismo infantil. Com a participação de seis grupos culturais dos municípios de Itatira e Canindé, a mostra celebrou as manifestações populares vividas e reinventadas pelas crianças, marcando um momento de valorização da identidade sertaneja desde os primeiros anos de vida.</p>
-
-                <p>Realizada na comunidade de Alegre II, a mostra foi a culminância de uma série de oficinas de dança popular e circo, que aconteceram nos dias 14, 15, 21 e 28 de dezembro de 2024, com 20 crianças participantes. As formações artísticas foram conduzidas por profissionais e jovens da própria comunidade, fortalecendo a relação entre cultura, território e infância.</p>
-
-                <p>Cada grupo participante recebeu um cachê simbólico de R$ 800,00 e uma comenda de reconhecimento, reforçando o incentivo à continuidade das práticas culturais nas comunidades. Entre os destaques da mostra esteve o Reisado Infantil Boi Catingueirinho, grupo que teve figurinos e personagens fomentados pelo projeto, despertando encantamento do público presente.</p>
-
-                <p>A iniciativa também garantiu acessibilidade, com intérprete de Libras presente durante todo o evento, e foi acompanhada por forte ação de mobilização e comunicação. Por meio de redes sociais, rádios comunitárias, escolas, WhatsApp e convites impressos, o evento alcançou 730 pessoas presencialmente e um público virtual de quase 6 mil pessoas.</p>
-
-                <p>Além do espetáculo cultural, o projeto proporcionou vivências educativas e afetivas para crianças e adultos, promovendo o fortalecimento da cultura popular como ferramenta de formação, cidadania e pertencimento. Professores, artistas e famílias relataram emoção e orgulho ao verem a infância protagonizando tradições como o reisado, a ciranda, o boi e as danças do sertão.</p>
-
-                <p>A I Mostra Regional de Cultura Popular na Infância foi produzida por Antonio Inácio dos Santos, com apoio cultural da Secretaria da Cultura do Ceará, através do III Edital Cultura Infância da Lei Paulo Gustavo. Contou também com o apoio da Prefeitura Municipal de Itatira, Departamento de Cultura, Escola 13 de Maio, Associação Comunitária Menino Jesus de Alegre II e o Ponto de Cultura Boi Catingueiro.</p>
-
-                <h3>Com resultados expressivos e envolvimento comunitário, o evento reafirma a potência da arte tradicional como linguagem de inclusão e transformação social, abrindo caminho para novas edições e para o fortalecimento das infâncias culturais no sertão cearense.</h3>
-            </div>
-        </div>
-
-                <div class="carossel">
-            <div class="carossel-inner">
-                <img src="IMG/alegre1.png" alt="Imagem 1">
-                <img src="IMG/alegre2.png" alt="Imagem 2">
-                <img src="IMG/vitoria1.png" alt="Imagem 1">
-                <img src="IMG/vitoria2.png" alt="Imagem 2">
-                <img src="IMG/umarizeiras1.png" alt="Imagem 1">
-                <img src="IMG/umarizeiras2.png" alt="Imagem 2">
-            </div>
-            <button class="carossel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carossel-control next" onclick="moveSlide(1)">&#10095;</button>
-            <div class="carossel-indicators"></div> <!-- MARCADORES -->
-        </div>
-
-        <div class="container">
-            <div class="text-events">
-                <h3 class="text-events">Teatro como Oficina: No Terreiro de Casa a Gente Vira Sertão</h3>
-                <p>A Associação Comunitária Menino Jesus de Alegre II, em Itatira, celebrou em 2024 a realização do projeto “Teatro como Oficina, no Terreiro de Casa a Gente Vira Sertão”, com apoio da Funarte, por meio do Edital Ações Continuadas para Grupos e Coletivos. A iniciativa foi desenvolvida pelo Teatro Boi Catingueiro da Comunidade de Alegre II, fortalecendo o acesso à cultura, à arte e à formação artística no sertão.</p>
-
-                <h3>Durante o ano, três cursos marcaram a trajetória do projeto, promovendo formação gratuita e incentivando a criatividade e a expressão de crianças, jovens e adultos: </h3>
-
-                <p>Curso de Teatro de Rua – realizado de junho a dezembro de 2024, no Auditório da Associação Comunitária Menino Jesus de Alegre II, sob a condução do facilitador Martonio Holanda. A oficina trouxe técnicas do teatro popular, explorando a relação entre artistas, espaço público e comunidade.</p>
-
-                <p>Curso de Circo – realizado entre agosto e dezembro de 2024, na Escola Antônio Gomes de Sousa, localizada na Fazenda Vitória. O curso foi ministrado por Gleilton Silva e levou para a comunidade a magia das artes circenses, trabalhando equilíbrio, palhaçaria e acrobacias adaptadas ao contexto local.</p>
-
-                <p>Curso de Teatro – também de agosto a dezembro de 2024, na Casa Sede do Assentamento Umarizeiras. Sob a orientação de Ricardo Bruno, os participantes tiveram contato com fundamentos da interpretação, dramaturgia e montagem cênica, resultando em processos coletivos que unem identidade e memória sertaneja.</p>
-
-                <p>Com essas ações, o projeto reafirmou o compromisso do Teatro Boi Catingueiro e da Associação Comunitária Menino Jesus de Alegre II em levar arte e formação para dentro dos territórios, valorizando o protagonismo cultural das comunidades rurais. A experiência mostrou que, no terreiro de casa, a gente não apenas constrói encontros, mas também transforma vidas, fazendo do sertão um grande palco.</p>
-            </div>
-        </div>
-
-        <div class="text-services">
-            <h2>Leis</h2>
-        </div>
-
-        <div class="container">
-            <div class="card card-expandable">
-                <img src="IMG/lei-paulo.png" alt="Imagem 1">
-                <div class="card-content">Lei Paulo Gustavo</div>
-                <div class="expandable-content">
-                    <p>O Programa Dinheiro Direto na Escola – PDDE, criado no ano de 1995, também conhecido pelas entidades participantes como PDDE Básico, atualmente é regido pela Resolução CD/FNDE/MEC nº 15, de 16 de setembro de 2021. Ela dispõe sobre as orientações para o apoio técnico e financeiro, fiscalização e monitoramento na execução do Programa, em cumprimento ao disposto na Lei nº 11.947, de 16 de junho de 2009.</p>
-                </div>
-            </div>
-            <div class="card card-expandable">
-                <img src="IMG/lei-aldir.png" alt="Imagem 2">
-                <div class="card-content">Lei Aldir Blanc</div>
-                <div class="expandable-content">
-                    <p>Instituído pela Portaria n° 264, de 1° de abril de 2024, o Proec tem como finalidade estimular a parceria entre a escola, a família e a comunidade, na perspectiva da educação integral, por meio da participação de estudantes, profissionais da educação, familiares e membros da comunidade em projetos de formação que envolvam a promoção da cidadania, da cultura de paz e democrática e a melhoria da qualidade da educação pública brasileira.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-services">
-            <h2>Editais</h2>
-        </div>
-
-        <div class="text-awards">
-            <ul>
-                <li><p>Projeto de energia elétrica</p></li>
-                <li><p>Projeto de abastecimento de água</p></li>
-                <li><p>Projeto de arborização e preservação do Meio Ambiente</p></li>
-                <li><p>Projeto “UM OLHAR PARA QUEM PRECISA SER OLHADO” resgatando a cidadania, a autoestima e no combate à evasão escolar, prevenção às drogas, à violência e à prostituição – 2012/2013</p></li>
-                <li><p>Projeto de construção de cisternas de placas</p></li>
-                <li><p>Projeto Fogões ecológicos</p></li>
-                <li><p>Pela Lei Municipal Nº 516 de 30 de Outubro de 2006 a Associação é reconhecida de utilidade Pública</p></li>
-                <li><p>Projeto Boi dos Caretas de São Gonçalo - Edital do Ministério da Cultura</p></li>
-                <li><p>Projeto Praça Cultural – Edital do BNB - 2009</p></li>
-                <li><p>Implantação do Projeto Cine Mais Cultura – Edital Ministério da Cultura - 2009</p></li>
-                <li><p>Projeto de instalação de Telefones Públicos e Fixo</p></li>
-                <li><p>Projeto Boi Catingueiro do Programa Ponto de Cultura do Governo Federal, Estadual, SECULT e MINc, com duração de 3 anos. 2012 a 2015</p></li>
-                <li><p>Certificado como Ponto de Cultura do Ceará - CODAC - SECULT/CE/2020</p></li>
-                <li><p>A Secretaria Especial da Cultura do Ministério da Cidadania, por meio da Secretaria da Diversidade Cultural, reconhece o coletivo/entidade como Ponto de Cultura a partir dos critérios estabelecidos na Lei Cultura Viva (13.018/2014)</p></li>
-                <li><p>Edital de credenciamento Lei Aldir Blanc - Itatira - 2020</p></li>
-                <li><p>Edital de Incentivo às Artes Luzanite Cunha - Lei Aldir Blanc - Itatira - 2020</p></li>
-                <li><p>Edital Patrimônio Cultural do Ceará - Lei Aldir Blanc - Secult - 2020</p></li>
-                <li><p>Edital de Patrocínio - 01/2022 - Casa Civil</p></li>
-                <li><p>Edital Cultura Viva - Pontos de Cultura - Secult - 2021</p></li>
-                <li><p>Edital Cultura Viva - Pontos de Cultura - Secult - 2022</p></li>
-                <li><p>Edital Mostra Regional do Ciclo do Natal - 2022</p></li>
-                <li><p>Edital Cultura Viva - Pontos de Cultura - Secult - 2023</p></li>
-                <li><p>Edital de Apoio às ações continuadas - Furnarte - 2023</p></li>
-                <li><p>Edital Mostra Regional do Ciclo do Natal - Secult - 2023</p></li>
-                <li><p>Edital Cultura Viva - Mestre Lucindo - Minc - 2023</p></li>
-                <li><p>Edital Cultura Infância - Secult - 2023</p></li>
-                <li><p>Edital de Apoio às artes e ao Audiovisual de Itatira - 2023</p></li>
-                <li><p>XXIV EDITAL CEARÁ JUNINO PARA OS FESTIVAIS REGIONAIS - Secult - 2024</p></li>
-            </ul>
-        </div>
-
-        <div class="text-services">
-            <h2>Prêmios</h2>
-        </div>
-
-        <div class="text-awards">
-            <ul>
-                <li><p>Projeto de Combate à evasão onde a entidade recebeu em 2006 o Prêmio Ceará Vida Melhor, pelas ações realizadas, os recursos foram destinados para construção do Auditório</p></li>
-                <li><p>Prêmio Pontos de Cultura do Ceará – 2018</p></li>
-                <li><p>Edital Prêmio de Fomento Arte e Cultura - Secult - 2020</p></li>
-                <li><p>Edital Prêmio Territórios da Cidadania - Secult - 2023</p></li>
-                <li><p>Edital Prêmio Cineclube - Secult - 2023</p></li>
-            </ul>
-        </div>
-
-
-        <footer>
-            <div class="footer-container">
-                <!-- Coluna de Contato -->
-                <div class="footer-column">
-                    <h2>Contato</h2>
-                    <p>Endereço: Alegre II, S/N, Itatira-CE</p>
-                    <p>CNPJ: 06.086.082/0001-15</p>
-                    <p>Email: associacao</p>
-                </div>
-    
-                <!-- Coluna de Links e Redes Sociais -->
-                <div class="footer-column">
-                    <h2>Links Rápidos</h2>
-                    <p><a href="#blog">Blog</a></p>
-                    <p><a href="#privacidade">Política de Privacidade</a></p>
-    
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><img src="IMG/facebook.png" alt="Facebook"></a>
-                        <a href="https://blogger.com" target="_blank"><img src="IMG/blogger.png" alt="Blogger"></a>
-                        <a href="https://instagram.com" target="_blank"><img src="IMG/instagram.png" alt="Instagram"></a>
+                        <button class="prev-btn">❮</button>
+                        <button class="next-btn">❯</button>
                     </div>
                 </div>
+                <div class="featured-info">
+                    <span class="status-badge permanent">Projeto Contínuo</span>
+                    <h2>Espetáculo da Paixão de Cristo</h2>
+                    <p>Desde 2016, a comunidade de Alegre se une para realizar um dos maiores espetáculos teatrais a céu
+                        aberto da região. Mais do que uma encenação religiosa, é um laboratório de teatro, figurino e
+                        cenografia que envolve dezenas de jovens locais.</p>
+                    <ul class="project-details">
+                        <li><strong>Impacto:</strong> +50 atores e figurantes locais</li>
+                        <li><strong>Público:</strong> Atrai visitantes de toda a região</li>
+                        <li><strong>Formação:</strong> Oficinas de interpretação e voz</li>
+                    </ul>
+                </div>
             </div>
-    
-            <div class="footer-bottom">
-                <p>&copy; 2024 <a href="https://github.com/vinisantoszx">vinisantoszx</a>. Todos os direitos reservados.</p>
-                <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
+        </section>
+
+        <section class="projects-grid-section">
+            <div class="section-title">
+                <h2>Ações de Formação e Cidadania</h2>
+                <div class="separator"></div>
             </div>
-        </footer>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="card-thumb">
+                        <img src="IMG/continuadas-1.JPG" alt="Funarte">
+                        <span class="card-badge active">Em Atividade</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Funarte Ações Continuadas</h3>
+                        <p>Um programa intensivo de formação artística apoiado pelo MINC. Oferecemos 180h de cursos em
+                            Circo, Teatro de Rua e Performance, profissionalizando a juventude rural.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-thumb">
+                        <img src="IMG/cine-6.JPG" alt="Cine Mais Cultura">
+                        <span class="card-badge permanent">Legado</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Cine Mais Cultura</h3>
+                        <p>Implantado em 2009, democratizou o acesso ao audiovisual na comunidade. Onde não havia
+                            cinema, criamos uma janela para o mundo através de exibições gratuitas e debates.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-thumb">
+                        <img src="IMG/musica-1.JPG" alt="Música">
+                        <span class="card-badge active">Formação</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Escola de Música</h3>
+                        <p>Cursos de Flauta Doce, Violão e Teclado. A musicalização é uma das ferramentas mais potentes
+                            do Boi Catingueiro para desenvolver disciplina e sensibilidade nas crianças.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="book-section">
+            <div class="book-container">
+                <div class="book-content">
+                    <span class="tag-highlight">Literatura & Memória</span>
+                    <h2>Ser Tão de Artes: Gentes, Cultura e Memórias</h2>
+                    <h3>Autor: Lennon Lopes</h3>
+                    <p>Lançado no Museu de Itatira, este livro é um documento histórico que registra a alma do nosso
+                        povo. Uma obra essencial para entender a identidade cultural dos sertões de Canindé e a
+                        trajetória de resistência dos nossos mestres e brincantes.</p>
+                    <button class="btn btn-white">Conhecer a Obra</button>
+                </div>
+                <div class="book-image">
+                    <img src="IMG/livro-lennon.jpg" alt="Lançamento do Livro">
+                </div>
+            </div>
+        </section>
+
+        <section class="infra-section">
+            <div class="section-title">
+                <h2>Nossa Infraestrutura</h2>
+                <div class="separator"></div>
+                <p>Projetos que deixam legado físico para a comunidade.</p>
+            </div>
+            <div class="infra-grid">
+                <div class="infra-item">
+                    <span class="icon material-symbols-outlined">water_drop</span>
+                    <h3>Cisternas & Água</h3>
+                    <p>Projetos de abastecimento para convivência com o semiárido.</p>
+                </div>
+                <div class="infra-item">
+                    <span class="icon material-symbols-outlined">theater_comedy</span>
+                    <h3>Sede Ampliada</h3>
+                    <p>Espaço cultural reformado com auditório e salas de aula.</p>
+                </div>
+                <div class="infra-item">
+                    <span class="icon material-symbols-outlined">forest</span>
+                    <h3>Arborização</h3>
+                    <p>Ações de plantio e sustentabilidade ambiental.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-archive-section" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="section-title">
+                <h2>Arquivo de Projetos Realizados</h2>
+                <div class="separator"></div>
+                <p>Histórico de iniciativas que marcaram nossa trajetória.</p>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; font-family: 'Radio Canada', sans-serif;">
+                    <thead>
+                        <tr style="background: #eee; text-align: left;">
+                            <th style="padding: 15px; color: #333;">Ano</th>
+                            <th style="padding: 15px; color: #333;">Projeto</th>
+                            <th style="padding: 15px; color: #333;">Local</th>
+                            <th style="padding: 15px; color: #333;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 15px; font-weight: bold; color: #e98b38;">2021</td>
+                            <td style="padding: 15px;">Seminário Regional LGBT</td>
+                            <td style="padding: 15px;">Itatira (Híbrido)</td>
+                            <td style="padding: 15px;">Concluído</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 15px; font-weight: bold; color: #e98b38;">2021</td>
+                            <td style="padding: 15px;">Noites Culturais (Itinerante)</td>
+                            <td style="padding: 15px;">Assentamentos Diversos</td>
+                            <td style="padding: 15px;">Concluído</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 15px; font-weight: bold; color: #e98b38;">2021</td>
+                            <td style="padding: 15px;">Ampliação do Prédio do Ponto</td>
+                            <td style="padding: 15px;">Sede Alegre II</td>
+                            <td style="padding: 15px;">Concluído</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
     </main>
+
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <img src="IMG/main-logo.png" alt="Boi Catingueiro" class="footer-logo">
+                <p class="footer-tagline">Associação Comunitária<br>Menino Jesus de Alegre II</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Fale Conosco</h3>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">location_on</span>
+                    <span>Alegre II, S/N, Itatira-CE</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">badge</span>
+                    <span>CNPJ: 04.658.797/0001-70</span>
+                </div>
+
+                <div class="contact-item">
+                    <span class="material-symbols-outlined contact-icon">mail</span>
+                    <span>associacaoalegre2@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Conecte-se</h3>
+
+                <a href="https://associacaoalegre.blogspot.com" target="_blank" class="blog-link">
+                    Acesse nosso Blog Oficial →
+                </a>
+
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/boicatingueiro" target="_blank" class="social-btn"
+                        aria-label="Facebook">
+                        <img src="IMG/facebook.png" alt="Facebook">
+                    </a>
+
+                    <a href="https://www.youtube.com/@acmjaiiitatira1665" target="_blank" class="social-btn"
+                        aria-label="Blogger">
+                        <img src="IMG/youtube.png" alt="YouTube">
+                    </a>
+
+                    <a href="https://www.instagram.com/ponto_deculturaboicatingueiro" target="_blank" class="social-btn"
+                        aria-label="Instagram">
+                        <img src="IMG/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Associação Comunitária Menino Jesus de Alegre II. Todos os direitos reservados.</p>
+            <p>Desenvolvido por <a href="https://github.com/vinisantoszx" target="_blank">Vinícius Santos</a></p>
+        </div>
+    </footer>
+
 </body>
-<script src="JS/mobile-navbar.js"></script>
-<script src="JS/toggle-card.js"></script>
-<script src="JS/image-carrosel.js"></script>
 
 </html>
